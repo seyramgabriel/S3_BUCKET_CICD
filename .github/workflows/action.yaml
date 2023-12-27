@@ -1,6 +1,11 @@
 name: Copy to S3
 
 on:
+  workflow_dispatch:
+    inputs:
+      approve:
+        description: 'Approve the Terraform VPC workflow'
+        required: true
   push:
     branches:
       - main
