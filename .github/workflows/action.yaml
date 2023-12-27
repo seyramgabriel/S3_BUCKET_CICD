@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       approve:
-        description: 'Approve the Terraform VPC workflow'
+        description: 'Approve the Copy to S3 workflow'
         required: true
       
 jobs:
