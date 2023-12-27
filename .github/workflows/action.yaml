@@ -6,11 +6,6 @@ on:
       approve:
         description: 'Approve the Terraform VPC workflow'
         required: true
-  push:
-    branches:
-      - main
-    paths:
-      - 'index.html'
       
 jobs:
   copy_to_s3:
