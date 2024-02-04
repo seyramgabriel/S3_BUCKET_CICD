@@ -1,61 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Ayetor Gabriel - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ayetor Gabriel
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          seyramgabriel@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ewe Proverb</title>
-  <style>
-    body {
-      font-family: verdana, sans-serif;
-    }
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
 
-    h1 {
-      text-align: center;
-      font-size: 20px;
-    }
+        </div>
+      </div>    
+    </nav>
 
-    p {
-      margin-bottom: 10px;
-    }
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/Picture.png" class="profile_image"/>                 <!--https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif-->
+      </div>
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+      <div>
+          <h1>
+            Hi, I'm Ayetor Gabriel! <img src="html_finalprojimages/hi.png" width="60px"/>                              <!--https://twemoji.maxcdn.com/2/72x72/1f44b.png-->
+          </h1>
+          <p>
+            I am a chartered accountant with 10 years experience in local governance in Ghana. I started my journey to migrate to Tech in February,2023.
+            I am currently certified with AWS as a Cloud Practitioner and Solutions Architect. My passion and curiosity for Tech, particularly cloud computing, moved me
+            into exploring SQL, Linux, bash scripting, HTML, CSS, JavaScript, git and github, and to embark on pleasurable escapades on AWS, provisioning virtual resources (both on the console and programmatically
+            with terraform and cloudformation).
+            My career objective is to work remotely with a Tech-oriented company where team spirit is the breath, every task is a challenge that builds individual skills
+            and group bond, and where excellence is appreciated and rewarded.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
 
-    li {
-      margin-bottom: 10px;
-    }
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
 
-    .skill {
-      display: inline-block;
-      margin-right: 10px;
-    }
-  </style>
-</head>
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
 
-<body style="font-family: verdana;">
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>  
 
-  <h1>Resilience: Embracing the Pepper’s Heat.</h1>
+        <div class="skill">
+          <img src="html_finalprojimages/git.png"/>
+          <h6>git and github</h6>
+          <p>1 year experience</p>
+        </div> 
 
-  <h3>Dela Doreen</h3>
+        <div class="skill">
+          <img src="html_finalprojimages/bash.png"/>
+          <h6>Bash Scripting</h6>
+          <p>1 year experience</p>
+        </div> 
 
-  <p>ddagbedoe@gmail.com</p>
-  <p><a href="https://medium.com/@ddagbedoe/">Visit my Medium page for more stories!</a></p>
+        <div class="skill">
+          <img src="html_finalprojimages/aws.png"/>
+          <h6>AWS</h6>
+          <p>1 year experience</p>
+        </div> 
+
+        <!-- Add more skills here -->
 
 
-  <img src="3.png" width="600" height="400" alt="Description of the image">
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
 
-  <p>In my native tongue Ewe /Ɛʋɛ/, a language spoken in parts of Ghana, Togo, and Benin, we have a proverb that says, “Atadi lɛ vɛvɛm, gakɛ ŋɔ lɛ ɛmɛ tsi agbɛ”. To wit “Within the pepper, it’s scorching, yet the worm thrives in it”.</p>
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AWS Virtual Machine</h3>
+            <ul>
+              <li>Provisioned a private ec2 nginx server using terraform</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AWS Elastic Beanstalk</h3>
+            <ul>
+              <li>Provisioned infrastructure and appication pipelines on github for elastic beanstalk using terraform</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AWS IoT</h3>
+            <ul>
+              <li>Provisioned virtual resources and a web app to display live data from an aggregator sensor</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
 
-  <p>At times, our existence can become as stifling as the interior of the spiciest pepper. We might feel as if we’re surrounded by walls of intense heat from every direction. The exhaustion we experience, both physically and mentally, can be profoundly disheartening. It might be tempting to succumb to the pain quietly.</p>
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gabriel is a very quick learner. 
+          He has a great sense of responsibility and is a very good team player. 
+          He has a curious mind and a passion that makes him dedicated. 
+          I have no doubt he will excel in his Tech endeavours.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gabriel is someone who is committed to excellence. 
+          His soft skills make him capable of almost every endeavour, including Tech. 
+          I can vouch for him in relation to any task that he may 
+          pick up that he will deliver to the very last bit.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gabriel was my fantastic work colleague for 8 years. 
+          His problem-solving skills made him an asset in the organisation 
+          I worked with him, I have no doubt he will make a great Techie.  
+          <span>&#8221;</span> <br/>
+        </div>
+      </div>
+    </section> 
 
-  <p>Let’s draw inspiration from the resilience of the worm. Despite the chaos and difficulties that surround us, let’s stand firm. Let’s resist the urge to give up. We must reenter the struggle repeatedly until we reach our aspirations. “No” should not be an option until we achieve our dreams. As long as we are breathing, hope persists.</p>
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
 
-  <h4>© ƉelaDoreen</h4>
-</body>
+    <div class="iconbutton">
+      <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>       <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
 
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Would you like to submit your recommendation?</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
 </html>
-
