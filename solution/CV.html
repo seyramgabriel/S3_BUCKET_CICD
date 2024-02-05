@@ -26,9 +26,10 @@
             border-spacing: 10px;
             margin-left: 10px;}
 
-        .topdiv {
+        .topdiv {display: flex;
+                 flex-direction: row;
+                 flex-flow: wrap;}
             
-             }
         #ref_div { margin-bottom: 20px;
                   text-align: center;}
 
@@ -53,7 +54,7 @@
 </div> 
 </nav><br>
 
-
+<body>
 <form id="curriculum_vitae">
 <div>
 <fieldset id="personal_data">
@@ -129,7 +130,8 @@ Email:				seyramgabriel@gmail.com <br>
  <legend style="font-style: italic;"><b> Projects:</b></legend>     
  <ul><li>Provision pipeline for a private ec2 nginx server using terraform</li> 
  <li>Provision infrastructure and application pipelines on GitHub for elastic beanstalk using terraform</li></ul>
-</div>	          
+</div>	 
+</fieldset>         
  
 <fieldset id="hard_skills">  
  <legend><b>Hard Skills</b></legend>
@@ -143,7 +145,11 @@ Email:				seyramgabriel@gmail.com <br>
 </table>
 </fieldset>
 
-<p id="soft_skills" style="font-style: italic;"><b>Soft Skills:</b>  Good Team Player; Problem Solving; Good Interpersonal Relations; Good Oral and Written English</p>
+<fieldset>
+<p id="soft_skills" style="font-style: italic;">Good Team Player; Problem-Solving; Good Interpersonal Relations; Good Oral and Written English</p>
+<legend><b>Soft Skills:</b></legend>
+</fieldset>
+
 <fieldset id="referees">  
     <legend><b>Referees:</b></legend>
     <div id="ref_div">
@@ -164,7 +170,7 @@ Email:				seyramgabriel@gmail.com <br>
 </div>
 </fieldset>
 </form>  
-
+</body>
 <div class="iconbutton">
     <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
