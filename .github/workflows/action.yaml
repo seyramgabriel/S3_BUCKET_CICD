@@ -6,7 +6,13 @@ on:
       approve:
         description: 'Approve the Copy to S3 workflow'
         required: true
-      
+
+  push:
+     branches:
+       - main
+     paths:
+       -'solution/**'     
+       
 jobs:
   copy_to_s3:
     runs-on: ubuntu-latest
