@@ -8,10 +8,10 @@ on:
         required: true
 
   push:
-     branches:
-       - main
-     paths:
-       -'solution/**'     
+    branches:
+      - main
+    paths:
+      - 'solution/**'     
        
 jobs:
   copy_to_s3:
