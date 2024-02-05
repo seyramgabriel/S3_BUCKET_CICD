@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head><title>MY CURRICULUM VITAE</title>
-<style> header { text-align: center;
+<style> #home {background-color: #7600bc;}
+
+        header { text-align: center;
                 font-size: 30px;
-                color: #7600bc;}
+                color: white;}
 
         .topmenu:hover {cursor: pointer;
                   font-weight: bolder;}
 
         .topdiv {display: flex;
                  flex-direction: row;
-                 flex-flow: wrap;}
+                 flex-flow: wrap;
+                 }
             
-        .topmenu { color:blue; 
+        .topmenu { 
             border-spacing: 10px;
-            margin-left: 10px;}
+            margin-left: 10px;
+            color: white}
 
         #curriculum_vitae {font-family: verdana;
                           font-size: 15px;}
@@ -35,16 +39,27 @@
         #ref_div { margin-bottom: 20px;
                   text-align: center;}
 
-        .iconbutton {background-color:  #7600bc;
-                     float: right;}
+        .iconbutton { width: 48px;
+                    height: 48px;
+                    border-radius: 100%;
+                    background-color: #7600bc;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    right: 3%;
+                    bottom: 3%;
+                    cursor: pointer;}
 
-        /*body {background-color: grey;}*/
+        body {background-color: #fff;}
            
        </style>
 </head>
 
-<header id="home">AYETOR GABRIEL SEYRAM KOFI</header> <br>
+<div id="home">
+<header>AYETOR GABRIEL SEYRAM KOFI</header> <br>
 <nav>
+   
 <div class="topdiv">
     <a class="topmenu" href="#personal_data">Personal data</a> 
     <a class="topmenu" href="#career_objective">Career Objective</a> 
@@ -57,7 +72,7 @@
     <a class="topmenu" href="#referees">Referees</a> 
 </div> 
 </nav><br>
-
+</div>
 <body>
 <form id="curriculum_vitae">
 <div>
